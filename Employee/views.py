@@ -3,7 +3,7 @@ from django.shortcuts import render
 from salary.models import Employee
 
 
-def home(request):
+def information(request):
     employees=Employee.objects.all()
     context={
         'employees':employees,
